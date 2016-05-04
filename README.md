@@ -1,2 +1,13 @@
-# FastTHSR
-This is a Chrome extension which let you to quick select some fields on THSR website. (https://irs.thsrc.com.tw/IMINT?locale=tw)
+dolphin's Easy THSR input script
+
+注意!!! 本套件僅會幫忙輸入常常要自己手動輸入的資料，並不會幫你自動訂票唷~ 也不會幫你輸入代碼! 這些都得自己來。
+
+如果你要找的是自動訂票程式，那本套件並不符合您的需要唷!!我只是幫你比較快的輸入一些資料而已~ 不要搞錯了唷! ^^
+
+用過APP訂票就知道，在APP裡面訂票有很多資訊都可以事先輸入，那為什麼網站就不能有這樣的功能呢? 這個擴充套件，就是為了幫助在高鐵訂票網站上，能更快速輸入訂票資訊而生!
+
+第一步驟(Step 1)按鈕：可以快速選取起程站和到達站，如果啟用假日模式的話還能夠快速選擇日期。
+
+第三步驟(Step 3)按鈕：可以快速輸入身分證字號, 行動電話, 電子郵件等，讓你不會在在訂票過程中反覆輸入。
+
+套件商店連結：https://goo.gl/UVcCvk
