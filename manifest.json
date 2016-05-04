@@ -1,7 +1,7 @@
 {
 	"name": "EasyTHSR",
 
-	"version": "0.6.0",
+	"version": "0.7.0",
 
 	"description": "dolphin's Easy THSR input script",
 
@@ -10,7 +10,7 @@
 	"permissions": [
 		"http://ajax.googleapis.com/",
 		"storage",
-		"https://irs.thsrc.com.tw/*" 
+		"https://irs.thsrc.com.tw/*"
 	],
 
 	"content_scripts": [
