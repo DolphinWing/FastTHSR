@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>THSR Extension Options</title>
+<link rel="stylesheet" href="pikaday/pikaday.css">
+</head>
+<body ><!-- onload="restore_options()" -->
+	<h2>THSR Extension Options</h2>
+	<table>
+		<tr>
+			<td>身分證字號</td>
+			<td><input type="text" id="user_id" style="width:100%;" /></td>
+		</tr>
+		<tr>
+			<td>起站代碼</td>
+			<td>
+				<select name="selectHomeStation" id="selectHomeStation"
+					onchange="station_change('station_home','selectHomeStation')">
+					<option selected="selected" value="">請選擇...</option>
+					<option value="0">&#21488;&#21271;</option>
+					<option value="1">&#26495;&#27211;</option>
+					<option value="2">&#26691;&#22290;</option>
+					<option value="3">&#26032;&#31481;</option>
+					<option value="4">&#21488;&#20013;</option>
+					<option value="5">&#22025;&#32681;</option>
+					<option value="6">&#21488;&#21335;</option>
+					<option value="7">&#24038;&#29151;</option>
+				</select>
+				<input type="text" id="station_home" />
+			</td>
+		</tr>
+		<tr>
+			<td>到站代碼</td>
+			<td>
+				<select name="selectAwayStation" id="selectAwayStation"
+					onchange="station_change('station_away','selectAwayStation')">
+					<option selected="selected" value="">請選擇...</option>
+					<option value="0">&#21488;&#21271;</option>
+					<option value="1">&#26495;&#27211;</option>
+					<option value="2">&#26691;&#22290;</option>
+					<option value="3">&#26032;&#31481;</option>
+					<option value="4">&#21488;&#20013;</option>
+					<option value="5">&#22025;&#32681;</option>
+					<option value="6">&#21488;&#21335;</option>
+					<option value="7">&#24038;&#29151;</option>
+				</select>
+				<input type="text" id="station_away" />
+			</td>
+		</tr>
+		<tr>
+			<td>行動電話</td>
+			<td><input type="text" id="mobile_phone" style="width:100%;" /></td>
+		</tr>
+		<tr>
+			<td>電子郵件</td>
+			<td><input type="text" id="e_mail" style="width:100%;" /></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button id="btn_save" style="width:100%;">儲存</button></td><!-- onclick="save_options()" -->
+			<td><span id="status" style="color:red;"></span></td><!-- -->
+		</tr>
+		<tr>
+			<td>假日模式</td>
+			<td>
+				<input type="checkbox" id="enable_holiday" title="啟用" />
+				<!-- onclick="holiday_change()" -->
+			</td>
+		</tr>
+		<tr id="row_date">
+			<td>日期</td>
+			<td><input type="text" id="holiday" style="width:100%;" value="2012/01/28" /></td>
+		</tr>
+		<tr id="row_time">
+			<td>時刻表</td>
+			<td>
+				<select name="timeTable" id="timeTable">
+					<option selected="selected" value="">請選擇...</option>
+					<option value="1201A">00:00</option>
+					<option value="1230A">00:30</option>
+					<option value="600A">06:00</option>
+					<option value="630A">06:30</option>
+					<option value="700A">07:00</option>
+					<option value="730A">07:30</option>
+					<option value="800A">08:00</option>
+					<option value="830A">08:30</option>
+					<option value="900A">09:00</option>
+					<option value="930A">09:30</option>
+					<option value="1000A">10:00</option>
+					<option value="1030A">10:30</option>
+					<option value="1100A">11:00</option>
+					<option value="1130A">11:30</option>
+					<option value="1200N">12:00</option>
+					<option value="1230P">12:30</option>
+					<option value="100P">13:00</option>
+					<option value="130P">13:30</option>
+					<option value="200P">14:00</option>
+					<option value="230P">14:30</option>
+					<option value="300P">15:00</option>
+					<option value="330P">15:30</option>
+					<option value="400P">16:00</option>
+					<option value="430P">16:30</option>
+					<option value="500P">17:00</option>
+					<option value="530P">17:30</option>
+					<option value="600P">18:00</option>
+					<option value="630P">18:30</option>
+					<option value="700P">19:00</option>
+					<option value="730P">19:30</option>
+					<option value="800P">20:00</option>
+					<option value="830P">20:30</option>
+					<option value="900P">21:00</option>
+					<option value="930P">21:30</option>
+					<option value="1000P">22:00</option>
+					<option value="1030P">22:30</option>
+					<option value="1100P">23:00</option>
+					<option value="1130P">23:30</option>
+				</select>
+			</td>
+		</tr>
+	</table>
+	<br />
+	<br />
+</body>
+<script type="text/javascript" src="pikaday/moment.min.js"></script>
+<script type="text/javascript" src="pikaday/pikaday.js"></script>
+<script type="text/javascript" src="options.js"></script>
+</html>

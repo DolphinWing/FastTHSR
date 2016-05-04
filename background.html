@@ -1,0 +1,51 @@
+<html>
+<head><title>background</title></head>
+<script type="text/javascript">
+
+//Chrome Extension: onclick extension icon, open popup.html in new tab
+//http://stackoverflow.com/questions/2412258/chrome-extension-onclick-extension-icon-open-popup-html-in-new-tab
+	var user_id = localStorage["user_id"];
+	if (!user_id) {
+		chrome.tabs.create({'url': chrome.extension.getURL('options.html')}, function(tab) {
+		  // Tab opened.
+		});
+	}
+
+// Listen requests from the content script. 
+chrome.extension.onRequest.addListener( 
+  function(request, sender, sendResponse) { 
+    if (request.method == "user_id" && sender.tab) { 
+      sendResponse({data: localStorage['user_id']}); 
+    } 
+	else if (request.method == "station_home" && sender.tab) { 
+      sendResponse({data: localStorage['station_home']}); 
+    } 
+	else if (request.method == "station_away" && sender.tab) { 
+      sendResponse({data: localStorage['station_away']}); 
+    } 
+	else if (request.method == "mobile_phone" && sender.tab) { 
+      sendResponse({data: localStorage['mobile_phone']}); 
+    } 
+	else if (request.method == "e_mail" && sender.tab) { 
+      sendResponse({data: localStorage['e_mail']}); 
+    } 
+	else if (request.method == "enable_holiday" && sender.tab) { 
+      sendResponse({data: localStorage['enable_holiday']}); 
+    } 
+	else if (request.method == "time_table" && sender.tab) { 
+      sendResponse({data: localStorage['time_table']}); 
+    } 
+	else if (request.method == "holiday" && sender.tab) { 
+      sendResponse({data: localStorage['holiday']}); 
+    } 
+    else { 
+      sendResponse({}); // snub them. 
+    } 
+  } 
+); 
+
+</script>
+
+<body>
+</body>
+</html>

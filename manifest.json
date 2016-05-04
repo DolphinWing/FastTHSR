@@ -1,0 +1,28 @@
+{
+	"name": "EasyTHSR",
+
+	"version": "0.6.0",
+
+	"description": "dolphin's Easy THSR input script",
+
+	"icons": { "48": "THSR_p.png" },
+
+	"permissions": [
+		"http://ajax.googleapis.com/",
+		"storage",
+		"https://irs.thsrc.com.tw/*" 
+	],
+
+	"content_scripts": [
+		{
+			"matches": [ "https://irs.thsrc.com.tw/IMINT*" ] ,
+			"js": [
+				"fast_script.user.js"
+			] ,
+			"all_frames": true
+		}
+	],
+
+	"manifest_version": 2,
+	"options_page": "options.html"
+}
