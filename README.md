@@ -1,3 +1,5 @@
+(no longer maintained, already deprecated/已廢棄，無維護)
+
 dolphin's Easy THSR input script
 
 注意!!! 本套件僅會幫忙輸入常常要自己手動輸入的資料，並不會幫你自動訂票唷~ 也不會幫你輸入代碼! 這些都得自己來。
